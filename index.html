@@ -1,443 +1,231 @@
-<!DOCTYPE HTML>
-<html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!DOCTYPE html>
+<html>
 
-    <title>Seunghwan Um</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="Admittance control with RB10. This is a research project by Seunghwan Um and Jaeyoon Shim at Sungkyunkwan University.">
+  <meta name="keywords" content="Admittance, RB10, rainbow robotics, admittance control, rb10">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[RUSH] Admittance Control with RB10</title>
 
-    <meta name="author" content="Seunghwan Um">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    
-  </head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-                  Seunghwan Um
-                </p>
-                <p>Hi there! I'm a PhD student at <a href="https://mecha.skku.ac.kr/roboticsinnovatory/">Robotics Innovatory, Sungkyunkwan University</a>, South Korea, under the supervision of <a href="https://scholar.google.co.kr/citations?user=EDrjHWsAAAAJ&hl=ko">Prof.Hyouk Ryeol Choi</a></p>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
 
-                <p>My research focuses on designing versatile robotic gripper in the logistics. These days I'm interested in developing a robotic system that can interact with the external environment for grasping or manipulation, so I'm considering various methods from gripper design to imitation learning.</p>
-                </p>
-                <p style="text-align:center">
-                  <a href="mailto:seunghwanum@gmail.com">Email</a> &nbsp;/&nbsp;
-                  <a href="data/cv_seunghwan.pdf">CV</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=fPPS03MAAAAJ&hl=ko">Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/r-ush">Github</a>
-                </p>
-              </td>
-              <td style="padding:2.5%;width:37%;max-width:37%">
-                <a href="images/seunghwan.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 20%;" alt="profile photo" src="images/seunghwan.jpg" class="hoverZoomLink"></a>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <p style="color:red;">[**** Homepage Under Construction ****]</p>
-              </td>
-            </tr>
-            
-            <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
-              </td>
-            </tr>
+    gtag('js', new Date());
 
-            
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
 
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
-    <tr onmouseout="rgmcws_stop()" onmouseover="rgmcws_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='rgmcws_image'><video width=100% height=100%  muted autoplay loop>
-          <source src="images/rgmcws.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/rgmcws.png' width=100%>
-        </div>
-        <script type="text/javascript">
-          function rgmcws_start() {
-            document.getElementById('rgmcws_image').style.opacity = "1";
-          }
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
 
-          function rgmcws_stop() {
-            document.getElementById('rgmcws_image').style.opacity = "0";
-          }
-          rgmcws_stop()
-        </script>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://sites.google.com/view/iros2024-workshop-bench-in-rgm/home?authuser=0">
-          <span class="papertitle">Overcoming Heavy Clutter: Utilizing the Hybrid Grasping Network and Gripper</span>
-        </a>
-        <br>
-        <strong>Seunghwan Um</strong>, 
-        Yeong Gwang Son, 
-        Tat Hieu Bui, 
-        Ho Sang Jung, 
-        Hyouk Ryeol Choi*
-        <br>
-        <em><strong>IROS Workshop</strong>: Benchmarking via Competitions in Robotic Grasping and Manipulation</em>, 2024
-        <br>
-        <span class="bestextendedabstract">★Best Extended Abstract</span>
-        <br>
-        <a href="https://sites.google.com/view/iros2024-workshop-bench-in-rgm/home?authuser=0">Workshop page</a>
-        /
-        <a href="https://www.youtube.com/watch?v=Hg1p_Pgn6PA&list=PLgrOFhA8Ei5zD9Hl4WqrQ8HzIjYoidw21&index=8">Youtube</a>
-        /
-        <a href="https://sites.google.com/view/iros2024-workshop-bench-in-rgm/contributions?authuser=0">Paper</a>
-        <p></p>
-        <p>
-        A robotic bin-picking system evaluated in the 9th Robotic Grasping and Manipulation Competition (RGMC) at ICRA 2024.
-        </p>
-      </td>
-    </tr>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
 
+<body>
 
-
-    <tr onmouseout="Linear_stop()" onmouseover="Linear_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='Linear_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="images/issac_g.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/adaptive.png' width="160">
-        </div>
-        <script type="text/javascript">
-          function Linear_start() {
-            document.getElementById('Linear_image').style.opacity = "1";
-          }
-
-          function Linear_stop() {
-            document.getElementById('Linear_image').style.opacity = "0";
-          }
-          Linear_stop()
-        </script>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-          <span class="nolinkpapertitle">Development of Adaptive Gripper Enhancing Power Grasp Range and Linearity</span>
-        </a>
-        <br>
-        Issac Rhee, 
-        Chun Soo Kim,
-        Heeyeon Jeong, 
-        Seung Jae Moon,
-        <strong>Seunghwan Um</strong>, 
-        Yeong Gwang Son, 
-        Yong Bum Kim, 
-        Ho Sang Jung, 
-        Hyouk Ryeol Choi*
-        <br>
-        <strong><em>IEEE Access</em></strong>, 2024
-        <br>
-        <a href="https://ieeexplore.ieee.org/abstract/document/10583863">Paper</a>
-        <p></p>
-        <p>
-        Gripper design that applies a Grasshopper mechanism to improve fingertip movement. It also allows the fingertips to move towards the palm of the gripper after grasping an object, thereby expanding the range of object sizes that can be adaptively grasped.
-        </p>
-      </td>
-    </tr>
-
-
-
-    <tr onmouseout="ReC_stop()" onmouseover="ReC_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='ReC_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="images/ReC-Gripper.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/ReC-Gripper.png' width="160">
-        </div>
-        <script type="text/javascript">
-          function ReC_start() {
-            document.getElementById('ReC_image').style.opacity = "1";
-          }
-
-          function ReC_stop() {
-            document.getElementById('ReC_image').style.opacity = "0";
-          }
-          ReC_stop()
-        </script>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <!-- <a href="https://github.com/SonYeongGwang/CoAS-Net"> -->
-			<span class="nolinkpapertitle">ReC-Gripper: A Reconfigurable Combined Suction and Fingered Gripper for Various Logistics Picking and Stowing Tasks</span>
-        </a>
-        <br>
-        <strong>Seunghwan Um</strong>,
-        Heeyeon Jeong,
-        Chun Soo Kim,
-        Issac Rhee, 
-        Hyouk Ryeol Choi*
-        <br>
-        <strong><em>IEEE Robotics and Automation Letters (RA-L)</em></strong>, 2024
-        <br>
-        <a href="https://ieeexplore.ieee.org/document/10306271">Paper</a>
-        <p></p>
-        <p>
-          <strong>Presented in ICRA 2024</strong>, 
-        </p>
-        <p>
-          Reconfigurable gripper to handle the objects in the bin and shelf environment simultaneously.
-        </p>
-        <p>
-          I validated the gripper's performance in experiment at shelf, and competition like bin environment.
-        </p> 
-          
-      </td>
-    </tr>
-
-
-
-    <!-- <td style="padding:16px;width:20%;vertical-align:middle">
-      <div class="one">
-        <img src='images/sixdof.png' width="160">
-      </div>
-      <script type="text/javascript">
-
-      </script>
-    </td>
-    <td style="padding:8px;width:80%;vertical-align:middle">
-    <span class="nolinkpapertitle">Deep Learning Based 6-DoF Antipodal Grasp Planning From Point Cloud in Random Bin-Picking Task Using Single-View</span>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
       </a>
-      <br>
-      Tat Hieu Bui,
-      <strong>Yeong Gwang Son</strong>,
-      Seung Jae Moon,
-      Quang Huy Nguyen, 
-      Issac Rhee, 
-      Juyong Hong,
-      Hyouk Ryeol Choi*
-      <br>
-      <strong><em>IEEE Robotics and Automation Letters (RA-L)</em></strong>, 2023
-      <br>
-      <a href="https://ieeexplore.ieee.org/abstract/document/10175572/">paper</a>
-      <p></p>
-      <p>
-      An approach for grasping unknown objects in bin-bicking tasks using end-to-end method for 6-DoF antipodal grasps.
-      </p>
-    </td> -->
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="https://r-ush.github.io/">
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
+        </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More Research
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://r-ush.github.io/">
+              ReC-Gripper
+            </a>
+            <a class="navbar-item" href="https://github.com/SonYeongGwang/CoAS-Net">
+              CoAS-Net
+            </a>
+            <a class="navbar-item" href="https://r-ush.github.io/">
+              Overcoming Heavy Clutter
+            </a>
+            <!-- <a class="navbar-item" href="https://photoshape.github.io">
+              PhotoShape
+            </a> -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </nav>
 
 
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Admittance Control with RB10</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://r-ush.github.io/">Seunghwan Um</a>,</span>
+              <span class="author-block">
+                <a href="https://kinggotgamja.github.io/My_WEB/">Jaeyoon Shim</a></span>
+              <span class="author-block">
+            </div>
 
-        </tbody></table>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Sungkyunkwan University</span>
+            </div>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:16px;width:100%;vertical-align:middle">
-              <h2>Award</h2>
-            </td>
-          </tr>
-        </tbody></table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr onmouseout="hutech_stop()" onmouseover="hutech_start()">
-            <td style="padding:16px;width:20%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='hutech_image'><img src='images/humantech_team.jpg' width="160"></div>
-                <img src='images/humantech_logo.jpg' width="160">
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <!-- <span class="link-block">
+                <a href="https://arxiv.org/pdf/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
+                <!-- <span class="link-block">
+                <a href="https://arxiv.org/abs/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+                <!-- Video Link. -->
+                <!-- <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/r-ush/rb10_admittance_control" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code (TBD)</span>
+                  </a>
+                </span>
+                <!-- Dataset Link. -->
+                <!-- <span class="link-block">
+                  <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="far fa-images"></i>
+                    </span>
+                    <span>Data</span>
+                  </a> -->
               </div>
-              <script type="text/javascript">
-                function hutech_start() {
-                  document.getElementById('hutech_image').style.opacity = "1";
-                }
-      
-                function hutech_stop() {
-                  document.getElementById('hutech_image').style.opacity = "0";
-                }
-                hutech_stop()
-              </script>
-            </td>
-            <td style="padding:8px;width:80%;vertical-align:middle">
-              <a href="https://humantech.samsung.com/saitext/index.jsp">
-            <span class="papertitle">Bronze Prize of Samsung Humantech</span>
-              </a>
-              <br>
-              <strong>Seunghwan Um</strong>,
-              Yeong Gwang Son, 
-              Juyong Hong,
-              Chun Soo Kim,
-              Hyouk Ryeol Choi*
-              <br>
-              <strong><em>Samsung Electronics Co., Ltd.</em></strong>, 2025
-              <br>
-              <a href="https://dhnews.co.kr/news/view/1065576650784089">News</a>
-              /
-              <a href="https://humantech.samsung.com/saitext/index.jsp">Humantech site</a>
-              <p></p>
-              <p>
-              <!-- Unknown object picking in cluttered bin-picking environment with a suction grasp detection neural network trained on a large-scale domain randomized synthetic dataset. -->
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr onmouseout="rgmc_stop()" onmouseover="rgmc_start()">
-            <td style="padding:16px;width:20%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='rgmc_image'><img src='images/rgmc_wt.jpg' width="160"></div>
-                <img src='images/rgmc.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function rgmc_start() {
-                  document.getElementById('rgmc_image').style.opacity = "1";
-                }
-      
-                function rgmc_stop() {
-                  document.getElementById('rgmc_image').style.opacity = "0";
-                }
-                rgmc_stop()
-              </script>
-            </td>
-            <td style="padding:8px;width:80%;vertical-align:middle">
-              <a href="https://cse.usf.edu/~yusun/rgmc/2024.html">
-            <span class="papertitle">2nd Place in the Competition</span>
-              </a>
-              <br>
-              Yeong Gwang Son, 
-              <strong>Seunghwan Um</strong>,
-              Juyong Hong,
-              Chun Soo Kim,
-              Hyouk Ryeol Choi*
-              <br>
-              <strong><em>9th Robotic Grasping and Manipulation Competition (RGMC) at ICRA</em></strong>, 2024
-              <br>
-              <a href="https://www.irobotnews.com/news/articleView.html?idxno=34929">News</a>
-              /
-              <a href="https://cse.usf.edu/~yusun/rgmc/2024.html">Competition page</a>
-              <p></p>
-              <p>
-                We participated 9th Robotic Grasping and Manipulation Competition (RGMC) at ICRA 2024 with <a href="https://ieeexplore.ieee.org/document/10306271">ReC-Gripper</a> and Extended <a href="https://ieeexplore.ieee.org/abstract/document/10333337">CoAS-Net</a>.
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr onmouseout="wcck_stop()" onmouseover="wcck_start()">
-            <td style="padding:16px;width:20%;vertical-align:middle">
-              <div class="one">
-                <!-- <div class="two" id='wcck_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/WCC.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div> -->
-                <div class="two" id='wcck_image'><img src='images/WCC_wt.jpg' width="160"></div>
-                <img src='images/WCC.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function wcck_start() {
-                  document.getElementById('wcck_image').style.opacity = "1";
-                }
-      
-                function wcck_stop() {
-                  document.getElementById('wcck_image').style.opacity = "0";
-                }
-                wcck_stop()
-              </script>
-            </td>
-            <td style="padding:8px;width:80%;vertical-align:middle">
-              <!-- <a href="https://cse.usf.edu/~yusun/rgmc/2024.html"> -->
-            <span class="nolinkpapertitle">Bronze Prize in the Competition</span>
-              </a>
-              <br>
-              <strong>Seunghwan Um</strong>,
-              Hyungjin Park, 
-              Young Jin, 
-              Boseok Kim, 
-              Joonmyung Choi*
-              <br>
-              <strong><em>The Korean Society of Mechanical Engineers (KSME)</em></strong>, 2021
-              <br>
-              <!-- <a href="https://www.irobotnews.com/news/articleView.html?idxno=34929">news</a> -->
-              <!-- / -->
-              <!-- <a href="https://cse.usf.edu/~yusun/rgmc/2024.html">competition page</a> -->
-              <p></p>
-              <p>
-                Wall Climbing Car (WCC) [Undergraduate Project], 
-                <!-- homage of <a href="https://la.disneyresearch.com/publication/vertigo/">VertiGo</a>. -->
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <video id="teaser" autoplay muted loop playsinline height="50%">
+          <source src="./static/videos/Main admittance.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          <span class="dnerf">Admittance Control</span>
+            could be utilitinzed for RB10 to push and grasp objects in a cluttered environment.
+        </h2>
+      </div>
+    </div>
+  </section>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr onmouseout="wccc_stop()" onmouseover="wccc_start()">
-            <td style="padding:16px;width:20%;vertical-align:middle">
-              <div class="one">
-                <!-- <div class="two" id='wccc_image'><img src='images/WCC_wt.jpg' width="160"></div> -->
-                <!-- <div class="two" id='wccc_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/WCC_wall.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div> -->
-                <div class="two" id='wccc_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/WCC.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/WCC.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function wccc_start() {
-                  document.getElementById('wccc_image').style.opacity = "1";
-                }
-      
-                function wccc_stop() {
-                  document.getElementById('wccc_image').style.opacity = "0";
-                }
-                wccc_stop()
-              </script>
-            </td>
-            <td style="padding:8px;width:80%;vertical-align:middle">
-            <span class="nolinkpapertitle">Encouragement Prize in the Contest</span>
-              </a>
-              <br>
-              <strong>Seunghwan Um</strong>,
-              Hyungjin Park, 
-              Young Jin, 
-              Boseok Kim, 
-              Junmyeng Choi*
-              <br>
-              <!-- <strong><em>Daejeon Metropolitan City, Chungnam National University</em></strong>, 2021 -->
-              <strong><em>Creative and Intelligent Robot Contest (CIRO)</em></strong>, 2021
-              <br>
-              <!-- <a href="https://www.irobotnews.com/news/articleView.html?idxno=34929">news</a> -->
-              <!-- / -->
-              <!-- <a href="https://cse.usf.edu/~yusun/rgmc/2024.html">competition page</a> -->
-              <p></p>
-              <p>
-                Wall Climbing Car (WCC) [Undergraduate Project] 
-                <!-- homage of <a href="https://la.disneyresearch.com/publication/vertigo/">VertiGo</a>. -->
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:right;font-size:small;">
-                  I got help from <a href="https://sonyeonggwang.github.io/website/">YeongGwang Son</a> to build homepage. Inspired by <a href="https://github.com/jonbarron/jonbarron_website/"> Jon Barron's website</a>.
-                </p>
-                <p style="text-align:right;font-size:small;">
-                  I've received a lot of research help from <a href="https://scholar.google.com/citations?user=3WCUuN4AAAAJ&hl=en&oi=sra">Jehyeok Kim</a> who is my cousin. I always cheer him on and am very proud of him.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-        </td>
-      </tr>
-    </table>
-  </body>
+  <section class="hero is-light is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-steve">
+            <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/Main admittance.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-chair-tp">
+            <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/Hand Guiding.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-coffee">
+            <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/Pushing and Grasping.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-toby">
+            <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/Admittance in ReC-Gripper.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <a class="icon-link" href="https://arxiv.org/abs/2504.01861" class="external-link">
+          <i class="ai ai-arxiv"></i>
+          <!-- <i class="fas fa-file-pdf"></i> -->
+        </a>
+        <a class="icon-link" href="https://github.com/r-ush/rb10_admittance_control" class="external-link" disabled>
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              Website template borrowed from <a href="https://github.com/r-ush/rb10_admittance_control">NeRFies</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
 </html>
