@@ -1,0 +1,29 @@
+title: "Admittance control with RB10"
+description: "This page demonstrates RB10 admittance control."
+url: "https://r-ush.github.io/rb10_admittance_control/"
+baseurl: ""
+lang: "en"
+
+author:
+  name: "Seunghwan Um"
+  email: "seunghwanum@gmail.com"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+markdown: kramdown
+# theme: minima
+
+social_links:
+  github: r-ush
+  google_scholar: fPPS03MAAAAJ
+
+permalink: /:year/:month/:day/:title/
+
+google_site_verification: ""  # Search Console 등록 후 코드 삽입
+
+timezone: Asia/Seoul
+
+include:
+  - robots.txt

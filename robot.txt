@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://r-ush.github.io/rb10_admittance_control/sitemap.xml
